@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria d'Arte | Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <header class="admin-header">
+        <nav class="navigations">
+          <ul class="nav-links">
+            <li><a href="#dashbord">Dashboard</a></li>
+            <li><a href="#manage">Manage Gallery</a></li>
+            <li><a href="#addartwork">Add Artwork</a></li>
+            <li><a href="login.html" class="logout">Logout</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard" id="dashbord">
+      <section class="stats">
+        <div class="card">
+          <h3>🖼️ 8 Artworks</h3>
+        </div>
+        <div class="card">
+          <h3>⭐6 Featured</h3>
+        </div>
+        <div class="card">
+          <h3>📬 0 Messages</h3>
+        </div>
+        <div class="card">
+          <h3>👤1 Admin</h3>
+        </div>
+      </section>
+
+      <section class="manage-gallery" id="manage">
+        <h2>Manage Artworks</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Title</th>
+              <th>Artist</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="assets/galleries/gallery_monalisa.jpg" alt="Mona Lisa"></td>
+              <td>Mona Lisa</td>
+              <td>Leonardo da Vinci</td>
+              <td>
+                <button class="update-btn">Update</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="assets/galleries/gallery_liberty.jpg" alt="Liberty"></td>
+              <td>Liberty Leading the People</td>
+              <td>Eugène Delacroix</td>
+              <td>
+                <button class="update-btn">Update</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="assets/galleries/gallery_adam.jpg" alt="The Creation of Adam"></td>
+              <td>The Creation of Adam</td>
+              <td>Michelangelo</td>
+              <td>
+                <button class="update-btn">Update</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="assets/galleries/gallery_athens.jpg" alt="The School of Athens"></td>
+              <td>The School of Athens</td>
+              <td>Raphael</td>
+              <td>
+                <button class="update-btn">Update</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="assets/galleries/gallery_marat.jpg" alt="The Death of Marat"></td>
+              <td>The Death of Marat</td>
+              <td>Jacques-Louis David</td>
+              <td>
+                <button class="update-btn">Update</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="assets/galleries/gallery_medusa.jpg" alt="The Raft of the Medusa"></td>
+              <td>The Raft of the Medusa</td>
+              <td>Théodore Géricault</td>
+              <td>
+                <button class="update-btn">Update</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="assets/galleries/gallery_judithslaying.jpg" alt="Judith Slaying Holofernes"></td>
+              <td>Judith Slaying Holofernes</td>
+              <td>Artemisia Gentilesch</td>
+              <td>
+                <button class="update-btn">Update</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="assets/galleries/gallery_saintmichael.jpg" alt="TSaint Michael Vanquishing Satan"></td>
+              <td>Saint Michael Vanquishing Satan</td>
+              <td>Raphael</td>
+              <td>
+                <button class="update-btn">Update</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+
+    <section class="add-artwork" id="addartwork">
+    <h2>Add New Artwork</h2>
+      <form class="add-artwork-form">
+        <div class="form-group">
+          <label for="title">Artwork Title</label>
+          <input type="text" id="title" name="title" placeholder="Enter artwork title" required>
+        </div>
+        <div class="form-group">
+          <label for="artist">Artist Name</label>
+          <input type="text" id="artist" name="artist" placeholder="Enter artist name" required>
+        </div>
+        <div class="form-group">
+          <label for="image">Image URL</label>
+          <input type="url" id="image" name="image" placeholder="Paste artwork image link" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" rows="4" placeholder="Write a short description..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Add Artwork</button>
+      </form>
+    </section>
+  </body>
+</html>
